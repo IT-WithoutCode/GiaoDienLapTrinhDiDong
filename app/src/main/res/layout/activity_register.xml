@@ -17,6 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đăng ký"
+        android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +43,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -65,7 +66,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
@@ -86,7 +87,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -107,7 +108,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,20 +120,24 @@
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/btn_bg"
+        android:backgroundTint="#E0BBBB"
         android:text="Đăng ký"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:strokeColor="#B64E70" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="164dp"
-        android:layout_height="25dp"
+        android:id="@+id/alreadyHaveAccount"
+        android:layout_width="222dp"
+        android:layout_height="26dp"
         android:text="Bạn đã có tài khoản?"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.457" />
 </androidx.constraintlayout.widget.ConstraintLayout>
