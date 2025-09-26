@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/img_4">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="207dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Nguyễn Phúc An"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
+        android:text="Calendar"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Rate us on App Store"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign Out"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Term and Conditions"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Reminder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Join us in social media"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <LinearLayout
+        android:id="@+id/social_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <ImageButton
+            android:id="@+id/btn_facebook"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/social_button_bg"
+            android:importantForAccessibility="yes"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/facebook"
+            android:contentDescription="@string/fb_desc"/>
+
+        <ImageButton
+            android:id="@+id/btn_instagram"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/social_button_bg"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/instagram"
+            android:contentDescription="@string/insta_desc"/>
+
+        <ImageButton
+            android:id="@+id/btn_twitter"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/social_button_bg"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/twitter"
+            android:contentDescription="@string/tw_desc"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/editColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pencil" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.314"
+        app:srcCompat="@drawable/angle_small_right" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/angle_small_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

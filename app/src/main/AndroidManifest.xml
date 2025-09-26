@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoGiaoDien">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".ForgetPassword"
             android:exported="false" />
         <activity
